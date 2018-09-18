@@ -1,14 +1,8 @@
 // components
 import Layout from '../components/layout';
-import Month from '../components/year/month';
+import Months from '../components/year/months';
 
 let currentYear = "2018";
-
-let Months = ({ year }) => {
-  return Array.apply(0, Array(12)).map(function(item, i) {
-    return <Month key={i + 1} month={i + 1} year={year} />;
-  });
-};
 
 export default () => (
   <Layout title={currentYear}>
