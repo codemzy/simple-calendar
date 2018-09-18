@@ -1,0 +1,28 @@
+{
+  "name": "simple-calendar",
+  "version": "0.0.1",
+  "description": "A simple responsive calendar.",
+  "main": "server.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next"
+  },
+  "dependencies": {
+    "next": "~6.1.2",
+    "react": "~16.5.1",
+    "react-dom": "~16.5.1"
+  },
+  "engines": {
+    "node": "8.x"
+  },
+  "repository": {
+    "url": "https://github.com/codemzy/simple-calendar.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "nextjs",
+    "calendar"
+  ]
+}
