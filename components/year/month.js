@@ -6,7 +6,7 @@ export default ({ month, year }) => {
   let daysInMonth = moment(year + "-" + month, "YYYY-MM").daysInMonth();
   
   return (
-    <div class="col-md-3">
+    <div className="col-md-3">
       <h2>{ monthName }</h2>
       <p>{ daysInMonth }</p>
 
