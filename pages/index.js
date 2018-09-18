@@ -10,7 +10,7 @@ export default () => (
       <h1 className="display-1 font-weight-bold">{currentYear}</h1>
       <hr />
       <div className="row">
-        <Month month="Jan" />
+        <Month month="01" year={currentYear} />
       </div>
     </div>
   </Layout>
