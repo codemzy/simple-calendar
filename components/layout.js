@@ -16,4 +16,4 @@ export default ({ children, title = 'Simple Calendar' }) => (
     { children }
 
   </div>
-)
+);
