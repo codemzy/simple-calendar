@@ -9,6 +9,10 @@
   background-color: transparent;
 }
 
+.year-day:hover {
+  background-color: #dddddd;
+}
+
 /* s */
 @media (min-width: 576px) {
   .year-day {
