@@ -1,7 +1,7 @@
 
-export default ({ day, month }) => {
+export default ({ day, month, blank }) => {
   return (
-    <div className="year-day d-inline-block">
+    <div className={"d-inline-block year-day" + (blank ? " blank" : "") }>
     </div>
   );
 };

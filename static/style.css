@@ -1,6 +1,10 @@
 .year-day {
   width: 25px;
   height: 25px;
-  margin: 5px;
+  margin: 2px 5px;
   background-color: #eeeeee;
+}
+
+.blank {
+  background-color: transparent;
 }

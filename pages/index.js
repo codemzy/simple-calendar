@@ -6,7 +6,7 @@ let currentYear = "2018";
 
 export default () => (
   <Layout title={currentYear}>
-    <div className="container">
+    <div className="container pt-3">
       <h1 className="display-1 font-weight-bold">{currentYear}</h1>
       <hr />
       <div className="row">
