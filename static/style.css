@@ -5,7 +5,7 @@
   background-color: #eeeeee;
 }
 
-.year-day.blank {
+.year-day.blank, .year-day.blank:hover {
   background-color: transparent;
 }
 
