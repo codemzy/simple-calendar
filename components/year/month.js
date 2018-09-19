@@ -20,7 +20,7 @@ export default ({ month, year }) => {
   });
   
   return (
-    <div className="col-sm-6 col-md-4 col-lg-3 pt-3">
+    <div className="col-10 col-sm-6 col-md-4 col-lg-3 pt-3">
       <h2>{ monthName }</h2>
       <div className="days">{ blanks }{ days }</div>
     </div>

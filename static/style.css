@@ -1,10 +1,47 @@
 .year-day {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   margin: 2px 5px;
   background-color: #eeeeee;
 }
 
-.blank {
+.year-day.blank {
   background-color: transparent;
 }
+
+/* s */
+@media (min-width: 576px) {
+  .year-day {
+    width: 25px;
+    height: 25px;
+    margin: 0px 3px;
+  }
+}
+
+/* m */
+@media (min-width: 768px) {
+  .year-day {
+    width: 23px;
+    height: 23px;
+    margin: 0px 3px;
+  }
+}
+
+/* l */
+@media (min-width: 992px) {
+  .year-day {
+    width: 24px;
+    height: 24px;
+    margin: 0px 3px;
+  }
+}
+
+/* xl */
+@media (min-width: 1200px) {
+  .year-day {
+    width: 25px;
+    height: 25px;
+    margin: 2px 5px;
+  }
+}
+
