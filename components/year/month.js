@@ -16,7 +16,8 @@ export default ({ month, year }) => {
   
   // days in month
   let days = Array.apply(0, Array(daysInMonth)).map(function(item, i) {
-    return <Day key={i} day={i + 1} month={monthName} />;
+    let dayName = moment(year + "-" + month + "-" + (i + 1 < 10 ? "0" + (i + 1) : i + 1)).format('dddd'); 
+    return <Day key={i} day={i + 1} dayName={dayName} month={monthName} year={year} />;
   });
   
   return (
