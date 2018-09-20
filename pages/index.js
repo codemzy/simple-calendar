@@ -1,17 +1,22 @@
+// hoc
+import Year from '../components/hoc/year';
+
 // components
 import Layout from '../components/layout';
 import Months from '../components/year/months';
 
-let currentYear = "2018";
 
-export default () => (
-  <Layout title={currentYear}>
-    <div className="container pt-3">
-      <h1 className="display-1 font-weight-bold">{currentYear}</h1>
-      <hr />
-      <div className="row">
-        <Months year={currentYear} />
+// component wrapped in year hoc
+export default Year(({ year }) => {
+  return (
+    <Layout title={`${year}`}>
+      <div className="container pt-3">
+        <h1 className="display-1 font-weight-bold">{year}</h1>
+        <hr />
+        <div className="row">
+          <Months year={year} />
+        </div>
       </div>
-    </div>
-  </Layout>
-);
+    </Layout>
+  );
+});
