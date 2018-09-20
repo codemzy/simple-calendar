@@ -13,6 +13,14 @@
   background-color: #dddddd;
 }
 
+.year-day.today {
+  background-color: #007bff;
+}
+
+.year-day.today:hover {
+  background-color: #0062cc;
+}
+
 /* s */
 @media (min-width: 576px) {
   .year-day {

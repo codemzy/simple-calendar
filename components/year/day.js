@@ -25,8 +25,9 @@ class Day extends React.Component {
   
   render() {
     return (
-      <div className={"d-inline-block year-day" + (this.props.blank ? " blank" : "") } onMouseEnter={this._showPopover.bind(this, true)} onMouseLeave={this._showPopover.bind(this, false)}>
-        { this.state.showPopover && !this.props.blank ? <Popover coords={this.state.coords}>{this.props.dayName} {this.props.month} {this.props.day}, {this.props.year}</Popover> : false }
+      <div className={"d-inline-block year-day" + (this.props.blank ? " blank" : "") + (this.props.today ? " today" : "") } 
+        onMouseEnter={this._showPopover.bind(this, true)} onMouseLeave={this._showPopover.bind(this, false)}>
+        { this.state.showPopover && !this.props.blank ? <Popover coords={this.state.coords}><span>{this.props.dayName} <b>{this.props.month} {this.props.day}</b>, {this.props.year}</span></Popover> : false }
       </div>
     );
   }
