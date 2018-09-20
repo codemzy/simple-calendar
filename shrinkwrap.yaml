@@ -1265,7 +1265,7 @@ packages:
   /browserslist/3.2.8:
     dependencies:
       caniuse-lite: 1.0.30000885
-      electron-to-chromium: 1.3.68
+      electron-to-chromium: 1.3.70
     dev: false
     hasBin: true
     resolution:
@@ -1760,10 +1760,10 @@ packages:
     dev: false
     resolution:
       integrity: sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
-  /electron-to-chromium/1.3.68:
+  /electron-to-chromium/1.3.70:
     dev: false
     resolution:
-      integrity: sha512-NHs9Xm6+ZUDkRj7t1tFwizzfMO2XZg0nmHNRRTurXHDUcEoz3Kdjs2mxXsd8drpEDfg5aVL0S8aypUCTA0HJ/Q==
+      integrity: sha512-WYMjqCnPVS5JA+XvwEnpwucJpVi2+q9cdCFpbhxgWGsCtforFBEkuP9+nCyy/wnU/0SyLcLRIeZct9ayMGcXoQ==
   /elliptic/6.4.1:
     dependencies:
       bn.js: 4.11.8
@@ -2568,6 +2568,7 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-VAVy0096wxGfj3bDDLwbHgN6/74=
+      tarball: 'http://registry.npmjs.org/is-builtin-module/-/is-builtin-module-1.0.0.tgz'
   /is-callable/1.1.4:
     dev: false
     engines:
@@ -4537,7 +4538,7 @@ packages:
       source-map: 0.5.7
       uglify-js: 2.8.29
       webpack: /webpack/3.10.0/webpack@3.10.0
-      webpack-sources: 1.2.0
+      webpack-sources: 1.3.0
     dev: false
     engines:
       node: '>=4.3.0 <5.0.0 || >=5.10'
@@ -4556,7 +4557,7 @@ packages:
       source-map: 0.6.1
       uglify-es: 3.3.9
       webpack: /webpack/3.10.0/webpack@3.10.0
-      webpack-sources: 1.2.0
+      webpack-sources: 1.3.0
       worker-farm: 1.6.0
     dev: false
     engines:
@@ -4752,13 +4753,13 @@ packages:
     dev: false
     resolution:
       integrity: sha512-aqYp18kPphgoO5c/+NaUvEeACtZjMESmDChuD3NBciVpah3XpMEU9VAAtIaB1BsfJWWTSdv8Vv1m3T0aRk2dUw==
-  /webpack-sources/1.2.0:
+  /webpack-sources/1.3.0:
     dependencies:
       source-list-map: 2.0.0
       source-map: 0.6.1
     dev: false
     resolution:
-      integrity: sha512-9BZwxR85dNsjWz3blyxdOhTgtnQvv3OEs5xofI0wPYTwu5kaWxS08UuD1oI7WLBLpRO+ylf0ofnXLXWmGb2WMw==
+      integrity: sha512-OiVgSrbGu7NEnEvQJJgdSFPl2qWKkWq5lHMhgiToIiN9w34EBnjYzSYs+VbL5KoYiLNtFFa7BZIKxRED3I32pA==
   /webpack/3.10.0/webpack@3.10.0:
     dependencies:
       acorn: 5.7.3
@@ -4781,7 +4782,7 @@ packages:
       tapable: 0.2.8
       uglifyjs-webpack-plugin: /uglifyjs-webpack-plugin/0.4.6/webpack@3.10.0
       watchpack: 1.6.0
-      webpack-sources: 1.2.0
+      webpack-sources: 1.3.0
       yargs: 8.0.2
     dev: false
     engines:
