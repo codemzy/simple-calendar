@@ -10,13 +10,11 @@ import Months from '../components/year/months';
 export default Year(({ year }) => {
   return (
     <Layout title={`${year}`}>
-      <div className="container pt-3">
         <h1 className="display-1 font-weight-bold">{year}</h1>
         <hr />
         <div className="row">
           <Months year={year} />
         </div>
-      </div>
     </Layout>
   );
 });

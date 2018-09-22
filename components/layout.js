@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Head from 'next/head'
 
 export default ({ children, title = 'Simple Calendar' }) => (
-  <div>
+  <div className="container pt-3">
     <Head>
       <title>{ title }</title>
       <meta charSet='utf-8' />
