@@ -1,3 +1,3 @@
-export default ({ year }) => {
-  return <h1 className="display-1 font-weight-bold">{year}</h1>;
+export default ({ year, currentYear }) => {
+  return <h1 className={"display-1 font-weight-bold" + (year === currentYear ? " text-primary" : "")}>{year}</h1>;
 };
