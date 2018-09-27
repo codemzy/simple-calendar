@@ -2,7 +2,7 @@
   width: 30px;
   height: 30px;
   margin: 2px 5px;
-  background-color: #eeeeee;
+  background-color: #eceff1;
 }
 
 .year-day.blank, .year-day.blank:hover {
@@ -10,7 +10,7 @@
 }
 
 .year-day:hover {
-  background-color: #dddddd;
+  background-color: #cfd8dc;
 }
 
 .year-day.today {
@@ -56,4 +56,13 @@
     margin: 2px 5px;
   }
 }
+
+.btn-link svg {
+  fill: #cfd8dc;
+}
+
+.btn-link svg:hover {
+  fill: #b0bec5;
+}
+
 

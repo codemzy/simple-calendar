@@ -12,7 +12,6 @@ export default HOC_Year(({ year, currentYear }) => {
   return (
     <Layout title={`${year}`}>
         <Year year={year} currentYear={currentYear} />
-        <hr />
         <div className="row">
           <Months year={year} />
         </div>
