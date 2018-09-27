@@ -1,11 +1,11 @@
 {
   "name": "simple-calendar",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A simple responsive calendar.",
   "main": "server.js",
   "scripts": {
     "dev": "next",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next"
   },
   "dependencies": {
@@ -22,7 +22,7 @@
   },
   "license": "MIT",
   "keywords": [
-    "node",
+    "static",
     "nextjs",
     "calendar"
   ]

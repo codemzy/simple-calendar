@@ -5,9 +5,9 @@ export default function(ComposedComponent) {
   return class extends React.Component {
     constructor(props) {
       super(props);
-      this.handleChange = this.handleChange.bind(this);
       this.state = {
-        year: (new Date()).getFullYear()
+        year: (new Date()).getFullYear(),
+        currentYear: (new Date()).getFullYear()
       };
     }
 
@@ -18,7 +18,9 @@ export default function(ComposedComponent) {
     }
 
     render() {
-      return <ComposedComponent year={this.state.year} {...this.props} />;
+      return (
+        <ComposedComponent year={this.state.year} currentYear={this.state.currentYear} handleChange={this.handleChange.bind(this)} {...this.props} />
+      );
     }
   };
 }
