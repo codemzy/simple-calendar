@@ -8,10 +8,10 @@ import Months from '../components/year/months';
 
 
 // component wrapped in year hoc
-export default HOC_Year(({ year, currentYear }) => {
+export default HOC_Year(({ year, currentYear, handleChange }) => {
   return (
     <Layout title={`${year}`}>
-        <Year year={year} currentYear={currentYear} />
+        <Year year={year} currentYear={currentYear} handleChange={handleChange} />
         <div className="row">
           <Months year={year} />
         </div>
