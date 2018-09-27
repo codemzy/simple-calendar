@@ -1,0 +1,68 @@
+.year-day {
+  width: 30px;
+  height: 30px;
+  margin: 2px 5px;
+  background-color: #eceff1;
+}
+
+.year-day.blank, .year-day.blank:hover {
+  background-color: transparent;
+}
+
+.year-day:hover {
+  background-color: #cfd8dc;
+}
+
+.year-day.today {
+  background-color: #007bff;
+}
+
+.year-day.today:hover {
+  background-color: #0062cc;
+}
+
+/* s */
+@media (min-width: 576px) {
+  .year-day {
+    width: 25px;
+    height: 25px;
+    margin: 0px 3px;
+  }
+}
+
+/* m */
+@media (min-width: 768px) {
+  .year-day {
+    width: 23px;
+    height: 23px;
+    margin: 0px 3px;
+  }
+}
+
+/* l */
+@media (min-width: 992px) {
+  .year-day {
+    width: 24px;
+    height: 24px;
+    margin: 0px 3px;
+  }
+}
+
+/* xl */
+@media (min-width: 1200px) {
+  .year-day {
+    width: 25px;
+    height: 25px;
+    margin: 2px 5px;
+  }
+}
+
+.btn-link svg {
+  fill: #cfd8dc;
+}
+
+.btn-link svg:hover {
+  fill: #b0bec5;
+}
+
+
