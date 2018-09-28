@@ -5,5 +5,5 @@ module.exports = {
       '/': { page: '/' }
     }
   },
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/simple-calendar' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/simple-calendar/out' : '',
 }
