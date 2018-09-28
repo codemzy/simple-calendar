@@ -1,6 +1,6 @@
 {
   "name": "simple-calendar",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple responsive calendar.",
   "main": "server.js",
   "scripts": {
@@ -24,6 +24,7 @@
   "keywords": [
     "static",
     "nextjs",
+    "reactjs",
     "calendar"
   ]
 }
