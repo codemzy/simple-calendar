@@ -16,6 +16,8 @@ export default ({ children, title = 'Simple Calendar' }) => (
     </Head>
 
     { children }
+  
+    <div className="text-center text-muted mt-5"><small>Made by <a href="https://github.com/codemzy/simple-calendar">codemzy</a></small></div>
 
   </div>
 );
