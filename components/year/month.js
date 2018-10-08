@@ -1,12 +1,14 @@
 import moment from 'moment';
 
+// hoc
+import HOC_Today from '../hoc/today';
 // components
 import Day from './day';
 
-export default ({ month, year }) => {
+export default HOC_Today(({ month, year, currentDay, currentMonth }) => {
   
   let monthName = moment(month, "MM").format("MMM");
-  let activeMonth = moment(year + "-" + month).format("YYYY-MM") === moment().format("YYYY-MM");
+  let activeMonth = moment(year + "-" + month).format("YYYY-MM") === currentMonth;
   let daysInMonth = moment(year + "-" + month, "YYYY-MM").daysInMonth();
   let startDay = moment(year + "-" + month + "-01").format("d"); 
   
@@ -18,7 +20,7 @@ export default ({ month, year }) => {
   // days in month
   let days = Array.apply(0, Array(daysInMonth)).map(function(item, i) {
     let dayName = moment(year + "-" + month + "-" + (i + 1 < 10 ? "0" + (i + 1) : i + 1)).format('dddd'); 
-    let today = moment(year + "-" + month + "-" + (i + 1 < 10 ? "0" + (i + 1) : i + 1)).format('YYYY-MM-DD') === moment().format('YYYY-MM-DD'); 
+    let today = moment(year + "-" + month + "-" + (i + 1 < 10 ? "0" + (i + 1) : i + 1)).format('YYYY-MM-DD') === currentDay; 
     return <Day key={i} day={i + 1} dayName={dayName} month={monthName} year={year} today={today} />;
   });
   
@@ -28,4 +30,4 @@ export default ({ month, year }) => {
       <div className="days">{ blanks }{ days }</div>
     </div>
   );
-};
+});

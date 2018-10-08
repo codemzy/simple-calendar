@@ -4907,7 +4907,7 @@ registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
-  moment: 2.22.2
+  moment: ~2.22.2
   next: ~6.1.2
   react: ~16.5.1
   react-dom: ~16.5.1
