@@ -1,11 +1,9 @@
 import moment from 'moment';
 
-// hoc
-import HOC_Today from '../hoc/today';
 // components
 import Day from './day';
 
-export default HOC_Today(({ month, year, currentDay, currentMonth }) => {
+export default ({ month, year, currentDay, currentMonth }) => {
   
   let monthName = moment(month, "MM").format("MMM");
   let activeMonth = moment(year + "-" + month).format("YYYY-MM") === currentMonth;
@@ -30,4 +28,4 @@ export default HOC_Today(({ month, year, currentDay, currentMonth }) => {
       <div className="days">{ blanks }{ days }</div>
     </div>
   );
-});
+};
